@@ -1,0 +1,52 @@
+{
+  "state": "Punjab",
+  "diary_prompts": [
+    {
+      "id": "diary_01",
+      "trigger_scene": "scene_01_city",
+      "trigger_timing": "end_of_scene",
+      "icon": "notebook_glow",
+      "prompt": "You sit at the edge of your bed. The city hums outside. What are you feeling right now?",
+      "required": false
+    },
+    {
+      "id": "diary_02",
+      "trigger_scene": "scene_04_index",
+      "trigger_timing": "after_tap_punjab",
+      "icon": "notebook_book_page",
+      "prompt": "The book chose Punjab for you. Why do you think it did?",
+      "required": false
+    },
+    {
+      "id": "diary_03",
+      "trigger_scene": "scene_06_train",
+      "trigger_timing": "midway",
+      "icon": "notebook_window",
+      "prompt": "The fields are passing by. Meher asked you to really look. What do you see?",
+      "required": false
+    },
+    {
+      "id": "diary_04",
+      "trigger_scene": "scene_07_arrival",
+      "trigger_timing": "end_of_scene",
+      "icon": "notebook_marigold",
+      "prompt": "A family you have never met welcomed you like their own. What does that make you feel?",
+      "required": false
+    }
+  ],
+  "storage_schema": {
+    "player_id": "string",
+    "entries": [
+      {
+        "prompt_id": "string",
+        "scene_id": "string",
+        "timestamp": "ISO 8601",
+        "player_entry": "string"
+      }
+    ]
+  },
+  "notes": {
+    "skip_behavior": "Diary icon is non-intrusive and optional. Skipping reduces emotional depth of final AI log but never blocks gameplay.",
+    "ai_generation_rule": "Minimum 1 entry required for AI log generation. If zero entries exist, fallback to static reflection."
+  }
+}
