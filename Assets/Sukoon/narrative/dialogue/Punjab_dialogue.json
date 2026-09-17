@@ -1,0 +1,247 @@
+{
+  "state": "Punjab",
+  "guardian": "Meher",
+  "scenes": [
+    {
+      "scene_id": "scene_01_city",
+      "type": "cinematic",
+      "interactivity": null,
+      "lines": [
+        {
+          "id": "s1_01",
+          "speaker": "person",
+          "text": "Another day.",
+          "emotion": "neutral",
+          "next": "s1_02"
+        },
+        {
+          "id": "s1_02",
+          "speaker": "person",
+          "text": "Another cup of coffee.",
+          "emotion": "neutral",
+          "next": "s1_03"
+        },
+        {
+          "id": "s1_03",
+          "speaker": "person",
+          "text": "Buzzing horns. A city full of strangers. A phone full of notifications.",
+          "emotion": "neutral",
+          "next": "s1_04"
+        },
+        {
+          "id": "s1_04",
+          "speaker": "person",
+          "text": "So many people. So little warmth.",
+          "emotion": "sad",
+          "next": "s1_05"
+        },
+        {
+          "id": "s1_05",
+          "speaker": "person",
+          "text": "The world — it feels distant.",
+          "emotion": "sad",
+          "next": null
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02_delivery",
+      "type": "interactive",
+      "interactivity": {
+        "trigger": "tap_door",
+        "action": "advance_scene"
+      },
+      "lines": [
+        {
+          "id": "s2_01",
+          "speaker": "person",
+          "text": "Who even sends letters anymore?",
+          "emotion": "curious",
+          "next": null
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03_book",
+      "type": "interactive",
+      "interactivity": {
+        "trigger": "tap_book",
+        "action": "reveal_text"
+      },
+      "lines": [
+        {
+          "id": "s3_01",
+          "speaker": "narration",
+          "text": "The book opens to the first page. The words appear slowly, as if being written by an unseen hand.",
+          "emotion": "mystic",
+          "next": "s3_02"
+        },
+        {
+          "id": "s3_02",
+          "speaker": "book",
+          "text": "The book always finds those who need it the most. Follow the path — a soulful awakening awaits you.",
+          "emotion": "mystic",
+          "next": "s3_03"
+        },
+        {
+          "id": "s3_03",
+          "speaker": "person",
+          "text": "This has to be a joke... right?",
+          "emotion": "confused",
+          "next": null
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04_index",
+      "type": "interactive",
+      "interactivity": {
+        "trigger": "tap_state_punjab",
+        "action": "advance_scene"
+      },
+      "lines": [
+        {
+          "id": "s4_01",
+          "speaker": "narration",
+          "text": "You run your finger down the list. One name glows.",
+          "emotion": "neutral",
+          "next": "s4_02"
+        },
+        {
+          "id": "s4_02",
+          "speaker": "person",
+          "text": "Punjab...",
+          "emotion": "curious",
+          "next": null
+        }
+      ],
+      "state_index": [
+        { "name": "Punjab", "description": "Where love, generosity and courage flows like its rivers.", "status": "active" },
+        { "name": "Kerala", "description": "Where the monsoon writes poetry.", "status": "locked" },
+        { "name": "Bengal", "description": "Where art breathes and poetry sings.", "status": "locked" },
+        { "name": "Tamil Nadu", "description": "Where temples speak in stone.", "status": "locked" },
+        { "name": "Rajasthan", "description": "Where deserts bloom with courage.", "status": "locked" },
+        { "name": "Nagaland", "description": "Where the hills remember every song.", "status": "locked" }
+      ]
+    },
+    {
+      "scene_id": "scene_05_meher",
+      "type": "cinematic",
+      "interactivity": null,
+      "lines": [
+        {
+          "id": "s5_01",
+          "speaker": "meher",
+          "text": "I am Meher. Your companion and guide for this journey.",
+          "emotion": "warm",
+          "next": "s5_02"
+        },
+        {
+          "id": "s5_02",
+          "speaker": "meher",
+          "text": "The book found you for a reason. You do not have to understand it yet. You only have to follow.",
+          "emotion": "calm",
+          "next": "s5_03"
+        },
+        {
+          "id": "s5_03",
+          "speaker": "meher",
+          "text": "Punjab will not fix you. It will simply remind you what it means to be whole again.",
+          "emotion": "calm",
+          "next": "s5_04"
+        },
+        {
+          "id": "s5_04",
+          "speaker": "meher",
+          "text": "So go. Board the train.",
+          "emotion": "warm",
+          "next": null
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_06_train",
+      "type": "cinematic",
+      "interactivity": null,
+      "lines": [
+        {
+          "id": "s6_01",
+          "speaker": "meher",
+          "text": "Look outside. Really look.",
+          "emotion": "warm",
+          "next": "s6_02"
+        },
+        {
+          "id": "s6_02",
+          "speaker": "meher",
+          "text": "Punjab is much like its fields — generous and content, yet sturdy and courageous.",
+          "emotion": "warm",
+          "next": "s6_03"
+        },
+        {
+          "id": "s6_03",
+          "speaker": "meher",
+          "text": "You have spent so long rushing. Here, you must pause. Life is an experience, after all. And experiences are meant to be felt, not survived.",
+          "emotion": "calm",
+          "next": "s6_04"
+        },
+        {
+          "id": "s6_04",
+          "speaker": "meher",
+          "text": "A family will welcome you when you arrive. They do not know you, but they will welcome you anyway. That is the spirit of Punjab — they hold human connection above all else.",
+          "emotion": "warm",
+          "next": "s6_05"
+        },
+        {
+          "id": "s6_05",
+          "speaker": "meher",
+          "text": "Watch them. Learn from them.",
+          "emotion": "calm",
+          "next": null
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_07_arrival",
+      "type": "cinematic",
+      "interactivity": null,
+      "lines": [
+        {
+          "id": "s7_01",
+          "speaker": "family",
+          "text": "Welcome. We have been awaiting you.",
+          "emotion": "happy",
+          "next": "s7_02"
+        },
+        {
+          "id": "s7_02",
+          "speaker": "mother",
+          "text": "Meher always knows who needs the village — and whom the village needs. Come. Let us take you home.",
+          "emotion": "warm",
+          "next": "s7_03"
+        },
+        {
+          "id": "s7_03",
+          "speaker": "father",
+          "text": "You must be tired. The city takes more than it gives, no? Here, you will get it back.",
+          "emotion": "warm",
+          "next": "s7_04"
+        },
+        {
+          "id": "s7_04",
+          "speaker": "daughter",
+          "text": "These are for you. They bloom every morning, no matter what. Like us.",
+          "emotion": "happy",
+          "next": "s7_05"
+        },
+        {
+          "id": "s7_05",
+          "speaker": "meher",
+          "text": "Welcome to Punjab, traveler. Your journey begins here.",
+          "emotion": "warm",
+          "next": null
+        }
+      ]
+    }
+  ]
+}
