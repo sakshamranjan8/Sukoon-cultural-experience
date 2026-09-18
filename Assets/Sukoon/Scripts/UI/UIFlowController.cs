@@ -3,31 +3,18 @@ using UnityEngine;
 public class UIFlowController : MonoBehaviour
 {
     public GameObject mainMenuObjects;
-    public GameObject characterSelectionPanel;
+    public GameObject destinyBookPanel;
 
-    public void OpenCharacterSelection()
+    public void OpenDestinyBook()
     {
         if (mainMenuObjects != null)
         {
             mainMenuObjects.SetActive(false);
         }
 
-        if (characterSelectionPanel != null)
+        if (destinyBookPanel != null)
         {
-            characterSelectionPanel.SetActive(true);
-        }
-    }
-
-    public void ReturnToMainMenu()
-    {
-        if (characterSelectionPanel != null)
-        {
-            characterSelectionPanel.SetActive(false);
-        }
-
-        if (mainMenuObjects != null)
-        {
-            mainMenuObjects.SetActive(true);
+            destinyBookPanel.SetActive(true);
         }
     }
 }
